@@ -60,6 +60,8 @@ void cartridge_init(char *filename)
 
   mmu_register(cartridge);
 
+  if (!filename) return;
+
   fp = fopen(filename, "rb");
   if(fp) {
     fseek(fp, 0, SEEK_END);
