@@ -16,7 +16,7 @@ static void move_from_ccr(struct cpu *cpu, WORD op)
 static void move_from_ccr_print(struct cpu *cpu, WORD op)
 {
   printf("MOVE\tCCR,");
-  ea_print(cpu, op&0x3f, 0, 1);
+  //ea_print(cpu, op&0x3f, 0, 1);
   printf("\n");
 }
 
