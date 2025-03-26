@@ -15,8 +15,9 @@ void clock_step(void)
 {
   while(first_delay != NULL && first_delay->clock == 0) {
     first_delay->callback();
-    free(first_delay);
+    struct delay *temp = first_delay;
     first_delay = first_delay->next;
+    free(temp);
   }
   if(first_delay != NULL)
     first_delay->clock--;
