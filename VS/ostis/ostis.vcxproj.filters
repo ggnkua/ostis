@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\cpu">
+      <UniqueIdentifier>{bebcad36-d206-49eb-8475-438031acf57a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cpuinstr">
+      <UniqueIdentifier>{9b9b61bc-3caf-4339-9eb5-cac7376aa873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\debug">
+      <UniqueIdentifier>{fc3b729b-85b8-425b-a644-3687beaba8c8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\acia.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cartridge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\clock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cprint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\diag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dma.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\event.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\expr.tab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\fdc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\floppy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\floppy_msa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\floppy_st.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\floppy_stx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\glue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hdc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ikbd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mfp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\midi.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mmu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\mmu_fallback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\prefs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\psg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ram.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\screen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\shifter.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\state.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\abcd.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\add.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\adda.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\addi.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\addq.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\addx.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\and.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\andi.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\andi_to_ccr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\andi_to_sr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\asl.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\asr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\bcc.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\bchg.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\bclr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\bset.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\btst.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\clr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\cmp.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\cmpa.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\cmpi.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\cmpm.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\dbcc.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\divs.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\divu.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\ea.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\eor.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\eori.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\eori_to_ccr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\eori_to_sr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\exg.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\ext.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\jmp.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\jsr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\lea.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\linea.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\linef.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\link.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\lsl.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\lsr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\move.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\move_from_ccr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\move_from_sr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\move_to_ccr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\move_to_sr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\move_usp.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\movea.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\movec.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\movem.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\movep.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\moveq.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\muls.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\mulu.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\neg.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\negx.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\nop.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\not.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\or.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\ori.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\ori_to_ccr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\ori_to_sr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\pea.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\reset.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\rol.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\ror.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\roxl.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\roxr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\rte.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\rtr.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\rts.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\sbcd.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\scc.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\stop.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\sub.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\suba.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\subi.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\subq.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\subx.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\swap.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\tas.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\trap.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\tst.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\unlk.c">
+      <Filter>Source Files\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\add.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\bcc.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\clr.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\cmp.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\ea.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\exg.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\lea.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\movem.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\neg.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\negx.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\not.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\sub.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\ucode.c">
+      <Filter>Source Files\cpuinstr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\debug\debug.c">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\debug\display.c">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\debug\draw.c">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\debug\edit.c">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\debug\layout.c">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\debug\win.c">
+      <Filter>Source Files\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\lex.expr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\acia.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cartridge.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\clock.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cprint.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\cpu.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\diag.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dma.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\event.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\expr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\expr.tab.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\fdc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\floppy.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\floppy_msa.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\floppy_st.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\floppy_stx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\getopt.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\glue.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hdc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ikbd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\instr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\instr_clocked.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mfp.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\midi.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mmu.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mmu_fallback.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\prefs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\psg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ram.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rom.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\scancode.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\screen.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\shifter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\state.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\unistd.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

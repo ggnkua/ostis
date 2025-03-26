@@ -1,7 +1,7 @@
-#include "common.h"
-#include "cpu.h"
-#include "cprint.h"
-#include "mmu.h"
+#include "../common.h"
+#include "../cpu.h"
+#include "../cprint.h"
+#include "../mmu.h"
 
 #define BCC_NOT_TAKEN   1
 #define BSR_PUSH_1      2

@@ -53,5 +53,11 @@ extern char *testcase_name;
 extern void *xmalloc(size_t);
 extern char *xstrdup(char *);
 
+#ifdef _WIN32
+#define strcasecmp stricmp
+#define strncasecmp strnicmp
+#pragma warning( disable : 4996)
+#endif // _WIN32
+
 #endif
 

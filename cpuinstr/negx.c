@@ -1,4 +1,4 @@
-#include "common.h"
+#include "../common.h"
 #include "cpu.h"
 #include "cprint.h"
 #include "ea.h"
@@ -54,6 +54,7 @@ static void negx(struct cpu *cpu, WORD op)
     ADD_CYCLE(4);
     cpu_prefetch();
     cpu->instr_state = NEGX_WRITE;
+#pragma warning( disable : 4146)
     r = -operand;
     if(CHKX) {
       r--;

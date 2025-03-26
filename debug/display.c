@@ -13,7 +13,7 @@ static SDL_Renderer *debug_renderer;
 int debug_window_id = 0;
 int debug_update_win = 1;
 
-#define PADDR(f, x, y) (f->pixels + (y)*f->pitch + (x)*f->format->BytesPerPixel)
+#define PADDR(f, x, y) ((unsigned char *)f->pixels + (y)*f->pitch + (x)*f->format->BytesPerPixel)
 
 void display_clear_screen()
 {

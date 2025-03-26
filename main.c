@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <unistd.h>
-#include <getopt.h>
+#include "unistd.h"
+#include "getopt.h"
 #include <signal.h>
 #include "common.h"
 #include "mmu.h"
@@ -55,12 +55,14 @@ char *test_case_name;
 #define OPT_LOGLEVELS            10003
 #define OPT_AUDIO_DEVICE         10004
 
+#ifndef _WIN32
 struct sigaction reset;
 
 static void reset_action(int sig, siginfo_t *info, void *x)
 {
   cpu_reset_in();
 }
+#endif
 
 int main(int argc, char *argv[])
 {
@@ -241,9 +243,9 @@ int main(int argc, char *argv[])
   if(state != NULL)
     state_restore(state);
 
-  memset(&reset, 0, sizeof reset);
-  reset.sa_sigaction = reset_action;
-  sigaction(SIGHUP, &reset, NULL);
+  //memset(&reset, 0, sizeof reset);
+  //reset.sa_sigaction = reset_action;
+  //sigaction(SIGHUP, &reset, NULL);
 
   if(clocked_cpu) {
     while(cpu_run_clocked(CPU_RUN));

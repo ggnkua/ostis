@@ -100,6 +100,7 @@ static void ikbd_set_mouse_threshold(void)
 
 static void ikbd_return_clock(void)
 {
+#ifndef _WIN32
   time_t now;
   struct tm clock;
   int year,month,day,hour,min,sec;
@@ -128,6 +129,7 @@ static void ikbd_return_clock(void)
   ikbd_queue_fifo(bcd_hour);
   ikbd_queue_fifo(bcd_min);
   ikbd_queue_fifo(bcd_sec);
+#endif
 }
 
 static void ikbd_do_reset(void)

@@ -7,6 +7,12 @@
 #include "expr.h"
 #include "layout.h"
 
+#ifdef _WIN32
+#define strcasecmp stricmp
+#define strncasecmp strnicmp
+#pragma warning( disable : 4996)
+#endif // _WIN32
+
 struct edit {
   int pos;
   int len;

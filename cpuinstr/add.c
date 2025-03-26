@@ -1,5 +1,5 @@
-#include "common.h"
-#include "cpu.h"
+#include "../common.h"
+#include "../cpu.h"
 #include "cprint.h"
 #include "ea.h"
 

@@ -188,10 +188,10 @@ extern int cprint_all;
 #define AREG_HWORD(c, areg) (((void *)&c->a[areg]))
 #define AREG_LWORD(c, areg) (((void *)&c->a[areg])+2)
 #else
-#define DREG_HWORD(c, dreg) (((void *)&c->d[dreg])+2)
-#define DREG_LWORD(c, dreg) (((void *)&c->d[dreg]))
-#define AREG_HWORD(c, areg) (((void *)&c->a[areg])+2)
-#define AREG_LWORD(c, areg) (((void *)&c->a[areg]))
+#define DREG_HWORD(c, dreg) (((unsigned char *)&c->d[dreg])+2)
+#define DREG_LWORD(c, dreg) (((unsigned char *)&c->d[dreg]))
+#define AREG_HWORD(c, areg) (((unsigned char *)&c->a[areg])+2)
+#define AREG_LWORD(c, areg) (((unsigned char *)&c->a[areg]))
 #endif
 #define REG_HWORD(c, reg) (reg > 7 ? AREG_HWORD(c, reg-8) : DREG_HWORD(c, reg))
 #define REG_LWORD(c, reg) (reg > 7 ? AREG_LWORD(c, reg-8) : DREG_LWORD(c, reg))

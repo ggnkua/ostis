@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\acia.c" />
+    <ClCompile Include="..\..\cartridge.c" />
+    <ClCompile Include="..\..\clock.c" />
+    <ClCompile Include="..\..\cprint.c" />
+    <ClCompile Include="..\..\cpu.c" />
+    <ClCompile Include="..\..\cpuinstr\add.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\bcc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\clr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\cmp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\ea.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\exg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\lea.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\movem.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\neg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\negx.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\not.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\sub.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpuinstr\ucode.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\cpu\abcd.c" />
+    <ClCompile Include="..\..\cpu\add.c" />
+    <ClCompile Include="..\..\cpu\adda.c" />
+    <ClCompile Include="..\..\cpu\addi.c" />
+    <ClCompile Include="..\..\cpu\addq.c" />
+    <ClCompile Include="..\..\cpu\addx.c" />
+    <ClCompile Include="..\..\cpu\and.c" />
+    <ClCompile Include="..\..\cpu\andi.c" />
+    <ClCompile Include="..\..\cpu\andi_to_ccr.c" />
+    <ClCompile Include="..\..\cpu\andi_to_sr.c" />
+    <ClCompile Include="..\..\cpu\asl.c" />
+    <ClCompile Include="..\..\cpu\asr.c" />
+    <ClCompile Include="..\..\cpu\bcc.c" />
+    <ClCompile Include="..\..\cpu\bchg.c" />
+    <ClCompile Include="..\..\cpu\bclr.c" />
+    <ClCompile Include="..\..\cpu\bset.c" />
+    <ClCompile Include="..\..\cpu\btst.c" />
+    <ClCompile Include="..\..\cpu\clr.c" />
+    <ClCompile Include="..\..\cpu\cmp.c" />
+    <ClCompile Include="..\..\cpu\cmpa.c" />
+    <ClCompile Include="..\..\cpu\cmpi.c" />
+    <ClCompile Include="..\..\cpu\cmpm.c" />
+    <ClCompile Include="..\..\cpu\dbcc.c" />
+    <ClCompile Include="..\..\cpu\divs.c" />
+    <ClCompile Include="..\..\cpu\divu.c" />
+    <ClCompile Include="..\..\cpu\ea.c" />
+    <ClCompile Include="..\..\cpu\eor.c" />
+    <ClCompile Include="..\..\cpu\eori.c" />
+    <ClCompile Include="..\..\cpu\eori_to_ccr.c" />
+    <ClCompile Include="..\..\cpu\eori_to_sr.c" />
+    <ClCompile Include="..\..\cpu\exg.c" />
+    <ClCompile Include="..\..\cpu\ext.c" />
+    <ClCompile Include="..\..\cpu\jmp.c" />
+    <ClCompile Include="..\..\cpu\jsr.c" />
+    <ClCompile Include="..\..\cpu\lea.c" />
+    <ClCompile Include="..\..\cpu\linea.c" />
+    <ClCompile Include="..\..\cpu\linef.c" />
+    <ClCompile Include="..\..\cpu\link.c" />
+    <ClCompile Include="..\..\cpu\lsl.c" />
+    <ClCompile Include="..\..\cpu\lsr.c" />
+    <ClCompile Include="..\..\cpu\move.c" />
+    <ClCompile Include="..\..\cpu\movea.c" />
+    <ClCompile Include="..\..\cpu\movec.c" />
+    <ClCompile Include="..\..\cpu\movem.c" />
+    <ClCompile Include="..\..\cpu\movep.c" />
+    <ClCompile Include="..\..\cpu\moveq.c" />
+    <ClCompile Include="..\..\cpu\move_from_ccr.c" />
+    <ClCompile Include="..\..\cpu\move_from_sr.c" />
+    <ClCompile Include="..\..\cpu\move_to_ccr.c" />
+    <ClCompile Include="..\..\cpu\move_to_sr.c" />
+    <ClCompile Include="..\..\cpu\move_usp.c" />
+    <ClCompile Include="..\..\cpu\muls.c" />
+    <ClCompile Include="..\..\cpu\mulu.c" />
+    <ClCompile Include="..\..\cpu\neg.c" />
+    <ClCompile Include="..\..\cpu\negx.c" />
+    <ClCompile Include="..\..\cpu\nop.c" />
+    <ClCompile Include="..\..\cpu\not.c" />
+    <ClCompile Include="..\..\cpu\or.c" />
+    <ClCompile Include="..\..\cpu\ori.c" />
+    <ClCompile Include="..\..\cpu\ori_to_ccr.c" />
+    <ClCompile Include="..\..\cpu\ori_to_sr.c" />
+    <ClCompile Include="..\..\cpu\pea.c" />
+    <ClCompile Include="..\..\cpu\reset.c" />
+    <ClCompile Include="..\..\cpu\rol.c" />
+    <ClCompile Include="..\..\cpu\ror.c" />
+    <ClCompile Include="..\..\cpu\roxl.c" />
+    <ClCompile Include="..\..\cpu\roxr.c" />
+    <ClCompile Include="..\..\cpu\rte.c" />
+    <ClCompile Include="..\..\cpu\rtr.c" />
+    <ClCompile Include="..\..\cpu\rts.c" />
+    <ClCompile Include="..\..\cpu\sbcd.c" />
+    <ClCompile Include="..\..\cpu\scc.c" />
+    <ClCompile Include="..\..\cpu\stop.c" />
+    <ClCompile Include="..\..\cpu\sub.c" />
+    <ClCompile Include="..\..\cpu\suba.c" />
+    <ClCompile Include="..\..\cpu\subi.c" />
+    <ClCompile Include="..\..\cpu\subq.c" />
+    <ClCompile Include="..\..\cpu\subx.c" />
+    <ClCompile Include="..\..\cpu\swap.c" />
+    <ClCompile Include="..\..\cpu\tas.c" />
+    <ClCompile Include="..\..\cpu\trap.c" />
+    <ClCompile Include="..\..\cpu\tst.c" />
+    <ClCompile Include="..\..\cpu\unlk.c" />
+    <ClCompile Include="..\..\debug\debug.c" />
+    <ClCompile Include="..\..\debug\display.c" />
+    <ClCompile Include="..\..\debug\draw.c" />
+    <ClCompile Include="..\..\debug\edit.c" />
+    <ClCompile Include="..\..\debug\layout.c" />
+    <ClCompile Include="..\..\debug\win.c" />
+    <ClCompile Include="..\..\diag.c" />
+    <ClCompile Include="..\..\dma.c" />
+    <ClCompile Include="..\..\event.c" />
+    <ClCompile Include="..\..\expr.tab.c" />
+    <ClCompile Include="..\..\fdc.c" />
+    <ClCompile Include="..\..\floppy.c" />
+    <ClCompile Include="..\..\floppy_msa.c" />
+    <ClCompile Include="..\..\floppy_st.c" />
+    <ClCompile Include="..\..\floppy_stx.c" />
+    <ClCompile Include="..\..\getopt.c" />
+    <ClCompile Include="..\..\glue.c" />
+    <ClCompile Include="..\..\hdc.c" />
+    <ClCompile Include="..\..\ikbd.c" />
+    <ClCompile Include="..\..\lex.expr.c" />
+    <ClCompile Include="..\..\main.c" />
+    <ClCompile Include="..\..\mfp.c" />
+    <ClCompile Include="..\..\midi.c" />
+    <ClCompile Include="..\..\mmu.c" />
+    <ClCompile Include="..\..\mmu_fallback.c" />
+    <ClCompile Include="..\..\prefs.c" />
+    <ClCompile Include="..\..\psg.c" />
+    <ClCompile Include="..\..\ram.c" />
+    <ClCompile Include="..\..\rom.c" />
+    <ClCompile Include="..\..\rtc.c" />
+    <ClCompile Include="..\..\screen.c" />
+    <ClCompile Include="..\..\shifter.c" />
+    <ClCompile Include="..\..\state.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\acia.h" />
+    <ClInclude Include="..\..\cartridge.h" />
+    <ClInclude Include="..\..\clock.h" />
+    <ClInclude Include="..\..\common.h" />
+    <ClInclude Include="..\..\cprint.h" />
+    <ClInclude Include="..\..\cpu.h" />
+    <ClInclude Include="..\..\diag.h" />
+    <ClInclude Include="..\..\dma.h" />
+    <ClInclude Include="..\..\event.h" />
+    <ClInclude Include="..\..\expr.h" />
+    <ClInclude Include="..\..\expr.tab.h" />
+    <ClInclude Include="..\..\fdc.h" />
+    <ClInclude Include="..\..\floppy.h" />
+    <ClInclude Include="..\..\floppy_msa.h" />
+    <ClInclude Include="..\..\floppy_st.h" />
+    <ClInclude Include="..\..\floppy_stx.h" />
+    <ClInclude Include="..\..\getopt.h" />
+    <ClInclude Include="..\..\glue.h" />
+    <ClInclude Include="..\..\hdc.h" />
+    <ClInclude Include="..\..\ikbd.h" />
+    <ClInclude Include="..\..\instr.h" />
+    <ClInclude Include="..\..\instr_clocked.h" />
+    <ClInclude Include="..\..\mfp.h" />
+    <ClInclude Include="..\..\midi.h" />
+    <ClInclude Include="..\..\mmu.h" />
+    <ClInclude Include="..\..\mmu_fallback.h" />
+    <ClInclude Include="..\..\prefs.h" />
+    <ClInclude Include="..\..\psg.h" />
+    <ClInclude Include="..\..\ram.h" />
+    <ClInclude Include="..\..\rom.h" />
+    <ClInclude Include="..\..\rtc.h" />
+    <ClInclude Include="..\..\scancode.h" />
+    <ClInclude Include="..\..\screen.h" />
+    <ClInclude Include="..\..\shifter.h" />
+    <ClInclude Include="..\..\state.h" />
+    <ClInclude Include="..\..\unistd.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b160cdfd-1069-424d-8758-44c6c0060d66}</ProjectGuid>
+    <RootNamespace>ostis</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\svn\ostis\SDL2-2.32.0\SDL2-2.32.0\include;C:\svn\ostis\SDL_image\include;C:\svn\ostis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\svn\ostis\SDL2-2.32.0\SDL2-2.32.0\include;C:\svn\ostis\SDL_image\include;C:\svn\ostis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\svn\ostis\SDL2-2.32.0\SDL2-2.32.0\include;C:\svn\ostis\SDL_image\include;C:\svn\ostis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\svn\ostis\SDL2-2.32.0\SDL2-2.32.0\VisualC\x64\Debug\SDL2main.lib;C:\svn\ostis\SDL2-2.32.0\SDL2-2.32.0\VisualC\x64\Debug\SDL2.lib;winmm.lib;version.lib;Imm32.lib;Setupapi.lib;C:\svn\ostis\SDL_image\VisualC\x64\Debug\SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\svn\ostis\SDL2-2.32.0\SDL2-2.32.0\include;C:\svn\ostis\SDL_image\include;C:\svn\ostis;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

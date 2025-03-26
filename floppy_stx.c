@@ -4,6 +4,10 @@
 #include "floppy_stx.h"
 #include "diag.h"
 
+#ifdef _WIN32
+#define __attribute__(x)
+#endif
+
 #define MAXSIDES 2
 #define MAXTRACKS 86
 

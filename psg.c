@@ -27,7 +27,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <fcntl.h>
-#include <unistd.h>
+#include "unistd.h"
 #include <SDL.h>
 #include "common.h"
 #include "floppy.h"
